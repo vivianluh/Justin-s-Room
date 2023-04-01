@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- link to the stylesheet
+    something to note which was a problem I encounted when deploying the website 
+    in the index.html (the root), when linking you dont need to use '/', just link it as it is named in the root folder -->
+    
+    <link rel="stylesheet" href="style.css">  
+    <!-- IDEA: create a page that acts like a foyer that doesn't immediately show a reveal until clicking to enter -->
+    <title>Justin's Foyer</title>
+</head>
+
+
+<body>
+    <section class="foyer"> <!-- create a section class to easily manipulate different elements in CSS -->
+        <!-- I am confident using sections and divs instead of utilising body/header to divide elements -->
+        <h1>HELLO JUSTIN! WELCOME TO YOUR DIGITAL ROOM :)
+            HOVER OVER THE YELLOW SQUARE ON THE LEFT
+            TO START OR STOP DOING WORK
+        </h1>
+        <!-- link the text 'click here to enter' which will link to the page that has the interactive artwork -->
+        <a href="pages/justinsroom.html"><p>CLICK HERE TO ENTER</p></a>
+    </section>
+</body>
+</html>

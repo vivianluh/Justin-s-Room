@@ -1,0 +1,75 @@
+
+
+
+*{
+    margin: 0; /* There is no space between the inner box */
+    padding: 0; /*  and the outer box */
+}
+
+/* styling the clock display */
+.clock {
+    position: absolute; /* position absolute means the element is plucked out of the document, I can put it anywhere I want */
+    top: 5%; /* 5% of the window from the top */
+    left: 7%; /* 7% to the right of the window from the left */
+    transform: translateX(-50%) translateY(-50%); /* moves elemtn from current position according to x and y parameters */
+    color: #2953c8; /* colour text blue */
+    font-size: 3.0vh; /* font size adjusts according to the viewport size */
+    font-family: 'Barlow Condensed', sans-serif; /* defined a particular font */
+    letter-spacing: 5px; /* spaces letters */
+    z-index: 0; 
+}
+
+/* creating the moving work utilising background-image */
+/* background-image was utilised so it would fill up the space of the viewport and adjust according to 
+the size of the vh when it is to be manipulated */
+.images{
+
+    /* calling images in hierarchy */
+    background-image: 
+    url("../img/switch.png"),
+    url("../img/bed.png"),
+    url("../img/lights.png"),
+    url("../img/fan.png"),
+    url("../img/neonsign.png"),
+    url("../img/justinoff.png"),
+    url("../img/Computer2.png"),
+    url("../img/bg.png");
+    background-size: cover; /* cover vh */
+    background-repeat: no-repeat; /* fill vh */
+    height: 100vh; /* the whole vh is considered */
+}
+
+/* css hover function is utilised */
+/* when mouse hovers, things start to animate */
+/* utilises gifs to create moving images */
+.images:hover{
+    background-image:
+    url("../animations/switch.gif"),
+    url("../img/bed.png"),
+    url("../animations/lights.gif"),
+    url("../animations/fan.gif"),
+    url("../animations/neonsign.gif"), 
+    url("../img/justin.png"),
+    url("../animations/Computer2.gif"),
+    url("../img/bg.png");
+
+}
+
+/* styling the lightwitch display */
+/* using absolute to place it wherever */
+/* making sure height and width change corresponding to vh */
+/* when mouse hovers, the colour changes from on (yellow) to off (blue) */
+.relax{
+    position: absolute;
+    padding-left: 2%;
+    padding-top: 33%;
+}
+.square{
+    height: 5.0vh;
+    width: 5.0vh;
+    background-color: rgb(255, 162, 0);
+}
+
+.square:hover{
+    background-color: rgb(25, 0, 255);
+}
